@@ -1,0 +1,91 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6bbcbe;
+}
+@keyframes flip {
+  0% {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(180deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  75% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+#circles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  height: auto;
+  padding: 10vh;
+  animation: flip 2s ease-in-out infinite;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+@keyframes wavy {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+  75% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+#boxs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  height: auto;
+  padding: 10vh;
+}
+.box {
+  width: 20px;
+  height: 80px;
+  background-color: white;
+}
+div .box:nth-of-type(1) {
+  animation: wavy 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+div .box:nth-of-type(2) {
+  animation: wavy 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  animation-delay: 0.1s;
+}
+div .box:nth-of-type(3) {
+  animation: wavy 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  animation-delay: 0.2s;
+}
+div .box:nth-of-type(4) {
+  animation: wavy 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  animation-delay: 0.3s;
+}
+div .box:nth-of-type(5) {
+  animation: wavy 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  animation-delay: 0.4s;
+}
